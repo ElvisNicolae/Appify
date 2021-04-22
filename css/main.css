@@ -1,0 +1,409 @@
+@font-face {
+    font-family: Atkinson;
+    src: url(/assets/fonts/Atkinson-Hyperlegible-Regular-102.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Atkinson;
+    src: url(/assets/fonts/Atkinson-Hyperlegible-Bold-102.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Atkinson;
+    src: url(/assets/fonts/Atkinson-Hyperlegible-Italic-102.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Atkinson;
+    src: url(/assets/fonts/Atkinson-Hyperlegible-BoldItalic-102.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Atkinson, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+/*  */
+
+:root {
+    --primary-color: #2e1ae5;
+}
+
+.title {
+    font-size: 2.6rem;
+}
+
+.btn{
+    display: inline-block;
+    min-height: 3.15rem;
+    line-height: 3.15rem;
+    padding: 0rem 2rem;
+    background-color: rgb(200, 200, 200); 
+    border-radius: 1.3rem;
+    text-align: center;
+    font-size: 1.06rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    letter-spacing: 0.5px;
+}
+
+.btn-primary{
+    background-color: #1976d2;
+    color: white;
+}
+
+.btn-secondary{
+    background-color: #dc004e;
+    color: white;
+}
+
+.header {
+    color: white;
+    background: url("/assets/images/banner_img.png");
+    height: 105vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.nav {
+    display: flex;
+    max-width: 1250px;
+    margin: auto;
+    padding: 1.2rem;
+}
+
+.nav__list {
+    display: flex;
+    font-size: 1.2rem;
+    padding: 1.1rem 0rem;
+}
+
+#logo {
+    color: white;
+    font-size: 2.7rem;
+    margin: 0rem 1rem;
+    flex: 1;
+}
+
+.nav__list li {
+    margin: 0rem 1rem;
+    opacity: 0.85;
+}
+
+.nav__list :last-child{
+    opacity: 1;
+}
+
+.header__title {
+    max-width: 900px;
+    text-align: center;
+    margin: auto;
+    padding: 10rem 2.5rem;
+    line-height: 1.25;
+}
+
+
+
+.mission-title {
+    text-align: center;
+    padding: 13rem 0rem;
+    font-style: italic;
+    font-size: 2.3rem;
+    line-height: 1.25;
+}
+
+
+
+
+.testimonials {
+    max-width: 900px;
+    padding: 0rem 1.8rem;
+    margin: auto;
+}
+
+.testimonials__comment {
+    font-size: 1.3rem;
+    margin-bottom: 3.5rem;
+}
+
+.testimonials__author {
+    display: flex;
+}
+
+.testimonials__author__img {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+.testimonials__author__bio {
+    padding: 2.7rem 0rem 0rem 2rem;
+}
+
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    padding: 19rem 3rem;
+}
+
+.about-us__description {
+    padding-right: 5rem;
+    max-width: 500px;
+}
+
+.about-us__description h3{
+    font-size: 1.6rem;
+}
+
+.about-us__description p {
+    font-size: 1.2rem;
+}
+
+.about-us__description hr {
+    background-color: var(--primary-color);
+    margin-top: 1rem;
+    width: 4.5rem;
+    height: 4px;
+}
+
+.about-us__img {
+    width: 600px;
+    height: fit-content;
+}
+
+
+
+.reviews {
+    padding: 5rem 2rem 2rem 2rem;
+    height: 950px;
+    text-align: center;
+    background: url("/assets/images/background-vector.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.rev {
+    max-width: 850px;
+    min-height: 480px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.review {
+    display: block;
+}
+
+.reviews__title {
+    font-size: 2.8rem;
+}
+
+.review__comment {
+    font-size: 1.35rem;
+    padding: 6rem 0rem 3rem 0rem;
+    display: block;
+}
+
+.review__avatar{
+    width: 110px;
+    border-radius: 50%;
+}
+
+.review__name {
+    color:var(--primary-color);
+    font-family: 'Crimson Pro', cursive;
+}
+
+.review__occupation {
+    font-style: italic;
+}
+
+.review__dots {
+    display: flex;
+    max-width: 130px;
+    justify-content: center;
+    margin: auto;
+}
+
+.dot {
+    border: 1px solid var(--primary-color);
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot__circle{
+    background-color: var(--primary-color);
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s ease;
+    height: 3.8rem;
+    border-radius: 7%;
+    margin: 0rem 2rem;
+}
+
+.prev {
+    left: 7rem;
+}
+
+.next {
+    right: 7rem;
+}
+
+.prev:hover, .next:hover {
+    color: var(--primary-color);
+    background-color: rgba(207, 207, 207, 0.8);
+}
+
+
+.call-to-action {
+    background-color: #2d30d8;
+    color: white;
+    min-height: 25rem;
+    padding: 4rem 0.7rem;
+    position: relative;
+}
+
+.call-to-action__title {
+    margin: auto;
+    max-width: 615px;
+    text-align: center;
+    line-height: 3.3rem;
+}
+
+.call-to-action__btn {
+    background-color: #111f55;
+    display: block;
+    margin: auto;
+    width: 13rem;
+    margin-top: 2rem; 
+    transition: all 0.5s;
+}
+
+.call-to-action__btn:hover {
+    background-color: rgb(19, 41, 121)
+}
+
+.call-to-action__img {
+    width: 100%;
+    max-width: 200px;
+    position: absolute;
+    
+}
+
+.call-to-action__img1{
+    top: 14rem;
+    left: 17rem;
+}
+
+.call-to-action__img2{
+    bottom: 10rem;
+    right: 12rem;
+}
+
+@media only screen and (max-width: 1500px){
+    .call-to-action__img1{
+        left: 9rem;
+    }
+    
+    .call-to-action__img2{
+        right: 4rem;
+    }
+}
+
+@media only screen and (max-width: 1210px){
+    html {
+        font-size: 15px;
+    }
+
+    .about-us__img {
+        display: none;
+    }
+
+    .about-us__description {
+        max-width: 700px;
+    }
+
+    .call-to-action__img{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 780px){
+   html {
+       font-size: 14px;
+   }
+
+   .about-us__description {
+       padding-right: 1rem;
+   }
+
+   .header__title {
+       font-size: 2rem;
+   }
+
+   .prev, .next {
+       display: none;
+   }
+}
+
+@media only screen and (max-width: 520px){
+    html {
+        font-size: 13px;
+    }
+ }
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
