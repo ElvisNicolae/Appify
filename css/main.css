@@ -34,6 +34,9 @@
 
 html {
     font-family: Atkinson, Helvetica, sans-serif;
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 9rem;
 }
 
 a {
@@ -53,6 +56,7 @@ p {
 
 :root {
     --primary-color: #2e1ae5;
+    --secondary-color: #111f55;
 }
 
 .title {
@@ -130,15 +134,16 @@ p {
 
 
 
-.mission-title {
+.centered-title {
     text-align: center;
-    padding: 13rem 0rem;
     font-style: italic;
     font-size: 2.3rem;
     line-height: 1.25;
 }
 
-
+.mission-title {
+    padding: 13rem 0rem;
+}    
 
 
 .testimonials {
@@ -322,7 +327,7 @@ p {
 }
 
 .call-to-action__btn {
-    background-color: #111f55;
+    background-color: var(--secondary-color);
     display: block;
     margin: auto;
     width: 13rem;
@@ -341,15 +346,124 @@ p {
     
 }
 
-.call-to-action__img1{
+.call-to-action__img1 {
     top: 14rem;
     left: 17rem;
 }
 
-.call-to-action__img2{
+.call-to-action__img2 {
     bottom: 10rem;
     right: 12rem;
 }
+
+
+
+
+.portfolio {
+    margin: 20rem 2rem 10rem 2rem;
+}
+
+.portfolio__title {
+    max-width: 54rem;
+    margin: auto;
+    margin-bottom: 6rem;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.card {
+    position: relative;
+    margin: 1.3rem;
+    display: inline-block;
+}
+
+.card:hover .card__img {
+    transform: scale(1.085);
+}
+
+.card__img {
+    display: block;
+    max-width: 27rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.85s ease;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: black;
+    transition: all 1s ease;
+    color:white;
+    text-align: center;
+}
+
+.card-overlay:hover { 
+    opacity: 0.82;
+    transform: scale(1.085);
+}
+
+.card-overlay p { 
+    font-size: 1.4rem;
+    margin-top: 40%;
+    margin-bottom: 0rem;
+}
+
+.card-overlay h3 { 
+    font-size: 1.4rem;
+}
+
+.portfolio__btn {
+    display: block;
+    max-width: 15rem;
+    margin: 7rem auto;
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.portfolio__btn:hover {
+    background-color: rgb(19, 41, 121);
+}
+
+
+
+
+.footer {
+    background-color: var(--secondary-color);
+    height: 9rem;
+    width: 100%;
+    color: white;
+    position: absolute;
+    bottom: 0rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.6rem;
+    font-size: 1.4rem;
+}
+
+.logo-img{
+    width: 3.2rem;
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+    
+}
+
+
 
 @media only screen and (max-width: 1500px){
     .call-to-action__img1{
@@ -394,6 +508,10 @@ p {
 
    .prev, .next {
        display: none;
+   }
+
+   .portfolio__btn {
+       margin: 4rem auto;
    }
 }
 
