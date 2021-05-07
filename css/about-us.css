@@ -1,0 +1,120 @@
+.header__content {
+    justify-content: center;
+    padding: 0rem 2rem 12rem;
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    margin-left: 7%;
+}
+
+.header__slogan {
+   max-width: 600px;
+}
+
+.header__img {
+    max-width: 650px;
+    height: auto;
+    position: relative;
+    left: 2rem;
+}
+
+
+
+.what-we-do {
+    background: url("../assets/images/what-we-do-banner-01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+    display: flex;
+}
+
+.what-we-do__text {
+    max-width: 870px;
+    margin: auto;
+    text-align: center;
+}
+
+.what-we-do__title {
+    margin-bottom: 1.2rem;
+}
+
+.what-we-do ul {
+    font-size: 1.1rem;
+}
+
+
+
+
+.left-right-section {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.left-section {
+    margin-left: 7%;
+}
+
+.right-section .left-right-section__text-area {
+    padding: 0rem 0rem 0rem 3rem;
+}
+
+.left-right-section__text-area {
+    padding-right: 3rem;
+    max-width: 520px;
+}
+
+.left-right-section h2{
+    font-size: 1.6rem;
+}
+
+.left-right-section p {
+    font-size: 1.2rem;
+}
+
+.left-right-section__img {
+    width: 100%;
+    max-width: 680px;
+    height: 100%;
+}
+
+.left-right-section hr {
+    background-color: var(--primary-color);
+    margin-top: 1rem;
+    width: 4.5rem;
+    height: 4px;
+}
+
+
+@media only screen and (max-width: 1250px){
+    .header__content {
+        display: block;
+        text-align: center;
+        padding: 8rem 2rem 0rem;
+        margin-left: 0px;
+    }
+
+    .header__slogan {
+        max-width: 100%;
+    }
+
+    .header__img {
+        position: static;
+        margin-top: 2rem;
+    }
+
+    .left-right-section {
+        flex-wrap: wrap;
+    }
+
+    .right-section img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 780px){
+    .header__img {
+        width: 100%;
+    }
+}

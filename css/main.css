@@ -36,7 +36,7 @@ html {
     font-family: Atkinson, Helvetica, sans-serif;
     position: relative;
     min-height: 100%;
-    padding-bottom: 9rem;
+    padding-bottom: 14rem;
 }
 
 a {
@@ -61,6 +61,13 @@ p {
 
 .title {
     font-size: 2.6rem;
+}
+
+.centered-title {
+    text-align: center;
+    font-style: italic;
+    font-size: 2.3rem;
+    line-height: 1.25;
 }
 
 .btn{
@@ -106,11 +113,23 @@ p {
     display: flex;
     font-size: 1.2rem;
     padding: 1.1rem 0rem;
+    
 }
 
-#logo {
-    color: white;
-    font-size: 2.7rem;
+.nav__list a {
+    transition: 0.2s;
+}
+
+.nav__list a:hover { 
+    color: var(--primary-color);
+}
+
+.nav__list__index a:hover {
+    color:rgb(204, 189, 253);
+}
+
+.logo-text {
+    font-size: 2.1rem;
     margin: 0rem 1rem;
     flex: 1;
 }
@@ -134,12 +153,7 @@ p {
 
 
 
-.centered-title {
-    text-align: center;
-    font-style: italic;
-    font-size: 2.3rem;
-    line-height: 1.25;
-}
+
 
 .mission-title {
     padding: 13rem 0rem;
@@ -427,7 +441,7 @@ p {
     max-width: 15rem;
     margin: 7rem auto;
     background-color: var(--secondary-color);
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .portfolio__btn:hover {
@@ -438,32 +452,52 @@ p {
 
 
 .footer {
-    background-color: var(--secondary-color);
-    height: 9rem;
+    background-color:rgb(7, 16, 46);
+    height: 14rem;
     width: 100%;
-    color: white;
+    color:white;
     position: absolute;
     bottom: 0rem;
     padding: 2rem;
     text-align: center;
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
+.footer p {
+    margin: 1.2rem 0rem 1rem;
+}
+
+.footer-nav__page {
+    color: rgb(224, 224, 224);
+    margin: 0rem 1rem;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.footer-nav__page:hover {
+    color: var(--primary-color);
+}
+
+.footer-logo {
     margin-bottom: 0.6rem;
     font-size: 1.4rem;
+    text-align: center;
 }
 
-.logo-img{
-    width: 3.2rem;
-    height: 100%;
-    border-radius: 50%;
-    margin-right: 0.7rem;
-    
+.footer-logo__name {
+    margin-bottom: 1rem;
+} 
+
+.footer__media img{
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 0%;
+    display: inline-block;
+    margin: 0rem 0.4rem;
 }
 
-
+.footer__media img:hover{
+    background: black;
+}
 
 @media only screen and (max-width: 1500px){
     .call-to-action__img1{
