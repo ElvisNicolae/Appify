@@ -60,7 +60,7 @@ const autoSlideShow = function () {
             autoSlideShow();
         }
             
-    },5500);
+    },4500);
 }
 
 
