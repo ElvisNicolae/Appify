@@ -3,13 +3,13 @@ let slideTimer;
 
 document.addEventListener("DOMContentLoaded", function slideShow (){
     var i;
-    let review = document.querySelectorAll(".review");
-    let comment = document.querySelectorAll(".review__comment");
-    let name = document.querySelectorAll(".review__name");
-    let occupation = document.querySelectorAll(".review__occupation");
-    let avatar = document.querySelectorAll(".review__avatar");
-    let dot = document.querySelectorAll(".dot");
-    let dotBorderOn = "1px solid var(--primary-color)";
+    const review = document.querySelectorAll(".review");
+    const comment = document.querySelectorAll(".review__comment");
+    const name = document.querySelectorAll(".review__name");
+    const occupation = document.querySelectorAll(".review__occupation");
+    const avatar = document.querySelectorAll(".review__avatar");
+    const dot = document.querySelectorAll(".dot");
+    const dotBorderOn = "1px solid var(--primary-color)";
 
     for(i=0; i < review.length; i++){                       // get the values from JSON to the DOM
         name[i].innerHTML = reviews[i].name;
@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", function slideShow (){
 })
 
 const autoSlideShow = function () {    
-    let review = document.querySelectorAll(".review");
-    let dot = document.querySelectorAll(".dot");
-    let dotBorderOn = "1px solid var(--primary-color)";
+    const review = document.querySelectorAll(".review");
+    const dot = document.querySelectorAll(".dot");
+    const dotBorderOn = "1px solid var(--primary-color)";
 
     slideTimer = setTimeout(function () {
         if(slideIndex != reviews.length){
@@ -65,9 +65,9 @@ const autoSlideShow = function () {
 
 
 const selectReview = function (el){
-    let review = document.querySelectorAll(".review"); 
-    let dot = document.querySelectorAll(".dot");
-    let dotBorderOn = "1px solid var(--primary-color)";
+    const review = document.querySelectorAll(".review"); 
+    const dot = document.querySelectorAll(".dot");
+    const dotBorderOn = "1px solid var(--primary-color)";
 
     for(i=0; i< review.length; i++){
         review[i].style.display = "none";
