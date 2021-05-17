@@ -36,7 +36,7 @@ html {
     font-family: Atkinson, Helvetica, sans-serif;
     position: relative;
     min-height: 100%;
-    padding-bottom: 14rem;
+    padding-bottom: 10.5rem;
 }
 
 a {
@@ -164,6 +164,7 @@ p {
     max-width: 900px;
     padding: 0rem 1.8rem;
     margin: auto;
+    opacity: 0;
 }
 
 .testimonials__comment {
@@ -453,7 +454,7 @@ p {
 
 .footer {
     background-color:rgb(7, 16, 46);
-    height: 14rem;
+    height: 10.5rem;
     width: 100%;
     color:white;
     position: absolute;
@@ -463,7 +464,7 @@ p {
 }
 
 .footer p {
-    margin: 1.2rem 0rem 1rem;
+    margin: 1.11rem 0rem;
 }
 
 .footer-nav__page {
@@ -551,11 +552,40 @@ p {
 
 @media only screen and (max-width: 520px){
     html {
-        font-size: 13px;
+        font-size: 14px;
     }
- }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .call-to-action__title {
+        font-size: 2.2rem;
+    }
+
+    .header {
+        background-position: left;
+    }
+}
+
+
+
+
+
 
 @keyframes fade {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@keyframes scrollfade {
+    from {
+        transform: translateY(3rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1
+    }
 }

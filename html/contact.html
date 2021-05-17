@@ -13,9 +13,9 @@
     <header>
         <nav class="nav">
             <a href="../index.html" class="logo-text"><h1> App<span style="color: var(--primary-color)">i</span>fy </h1></a>
-            <ul class="nav__list">                
+            <ul class="nav__list">
+                <li> <a href="../index.html"> Home </a></li>                
                 <li> <a href="/html/about-us.html"> Who we are </a></li>
-                <li> <a href="#"> Our clients </a></li>
                 <li> <a href="/html/contact.html"> Contact </a></li>
             </ul>
         </nav>
@@ -25,21 +25,40 @@
 
     <main>
         <section class="contact-container">
-            <form action="">
+            <form class="form" action="">
                 <label>
                     Name:
-                    <input type="text" name="name" required placeholder="John Gates">
+                    <input class="form__input-name" type="text" name="name" required placeholder="John Gates">
                 </label>
                 <label>
                     Email:
-                    <input type="email" name="email" required placeholder="name@example.com">
+                    <input class="form__input-email" type="email" name="email" required placeholder="name@example.com">
                 </label>
                 <label>
                     Message: 
-                    <textarea name="message" required cols="30" rows="5"></textarea>
+                    <textarea class="form__textarea" name="message" required cols="30" rows="5"></textarea>
                 </label>
-                <input type="submit">
+                
+                <input class="form__input-submit" type="submit" value="Send Message">
             </form>
+
+            <hr>
+
+            <div class="contact-information">
+                <h3 class="contact-information__title">Contact Information</h3>
+                <div>
+                    <img src="https://www.freeiconspng.com/thumbs/location-icon-png/location-icon-map-png--1.png" alt="location icon">
+                    <p>Clarence Square Vpt 39T Agust</p>
+                </div>
+                <div>
+                    <img src="https://icons-for-free.com/iconfiles/png/512/phone-131964784943439862.png" alt="phone icon">
+                    <p>+435192758765</p>
+                </div>
+                <div>
+                    <img src="https://i.pinimg.com/originals/bb/18/bd/bb18bdbbef437b2d50518db5a8292c94.png" alt="mail icon">                   
+                    <p>mail@email.com</p>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -47,12 +66,10 @@
         <div class="footer-nav">
             <a class="footer-nav__page" href="/index.html">Home</a>
             <a class="footer-nav__page" href="/html/about-us.html">About Us</a>
-            <a class="footer-nav__page" href="/html/">Our Clients</a>
             <a class="footer-nav__page" href="/html/contact.html">Contact</a>
         </div>
-        <p> &copy;Vectors designed by <a href="https://www.freepik.com/" style="color: red">freepik</a> </p>
+        <p> &copy;Vectors designed by <a href="https://www.freepik.com/" style="color: rgb(0, 97, 189)">freepik</a> </p>
         <div class="footer-logo"> 
-            <h2 class="footer-logo__name"><a href="../index.html">Appify</a></h2>
             <div class="footer__media">
                 <a href="https://www.facebook.com" target="_blank"><img src="../assets/images/facebook-logo.png" alt="facebook's logo"></a>
                 <a href="https://www.twitter.com" target="_blank"><img src="../assets/images/twitterlogo.png" alt="twitter's logo"></a>
