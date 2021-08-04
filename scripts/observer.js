@@ -1,23 +1,16 @@
-const testimonial = document.querySelector(".testimonials");
-const about = document.querySelector(".about-us");
+const threshold = window.innerWidth < 600 ? 0.45 : 0.7;
 
-const intersectionCallBack = function (entries){
-    
-    console.log(entries[0]);
-    
-    if(entries[0].intersectionRatio > 0.7){
-        entries[0].target.style.animation = "scrollfade 1s ease-out";
-        entries[0].target.style.opacity = 1;
-    }
-    else{
-        entries[0].target.style.animation = "none";
+const intersectionCallBack = ([entries]) => { 
+    if(entries.isIntersecting){
+        entries.target.style.animation = "scrollfade 1s ease-out";
+        entries.target.style.opacity = 1;
+        observer.unobserve(entries.target);
     }
 }
 
 const observer = new IntersectionObserver( intersectionCallBack, 
 {
-    threshold: 0.7
+    threshold
 });
 
-observer.observe(testimonial);
-
+export default observer;

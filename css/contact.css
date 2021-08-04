@@ -94,3 +94,9 @@
 .contact-information__title {
     margin-bottom: 1.5rem;
 }
+
+@media only screen and (max-width: 490px){
+    .contact-container {
+        position: static;
+    }
+}
