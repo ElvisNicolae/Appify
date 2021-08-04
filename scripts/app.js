@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", function slideShow (){
     const dot = document.querySelectorAll(".dot");
     const dotBorderOn = "1px solid var(--primary-color)";
 
-    for(i=0; i < review.length; i++){                       // get the values from JSON to the DOM
+    // get the values from the array to the DOM
+    for(i=0; i < review.length; i++){                      
         name[i].innerHTML = reviews[i].name;
         comment[i].innerHTML = reviews[i].comment;
         occupation[i].innerHTML = reviews[i].occupation;
@@ -29,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function slideShow (){
                          
     
     autoSlideShow();
-    
 })
 
 const autoSlideShow = function () {    
@@ -60,7 +60,7 @@ const autoSlideShow = function () {
             autoSlideShow();
         }
             
-    },4500);
+    },4000);
 }
 
 

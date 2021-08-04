@@ -54,6 +54,11 @@
 
 .left-section {
     margin-left: 7%;
+    opacity: 0;
+}
+
+.right-section {
+    opacity: 0;
 }
 
 .right-section .left-right-section__text-area {
@@ -116,5 +121,11 @@
 @media only screen and (max-width: 780px){
     .header__img {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 490px){
+    .header__content {
+        padding-bottom: 40rem;
     }
 }
