@@ -1,27 +1,27 @@
 @font-face {
     font-family: Atkinson;
-    src: url(/assets/fonts/Atkinson-Hyperlegible-Regular-102.ttf);
+    src: url(../assets/fonts/Atkinson-Hyperlegible-Regular-102.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: Atkinson;
-    src: url(/assets/fonts/Atkinson-Hyperlegible-Bold-102.ttf);
+    src: url(../assets/fonts/Atkinson-Hyperlegible-Bold-102.ttf);
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: Atkinson;
-    src: url(/assets/fonts/Atkinson-Hyperlegible-Italic-102.ttf);
+    src: url(../assets/fonts/Atkinson-Hyperlegible-Italic-102.ttf);
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: Atkinson;
-    src: url(/assets/fonts/Atkinson-Hyperlegible-BoldItalic-102.ttf);
+    src: url(../assets/fonts/Atkinson-Hyperlegible-BoldItalic-102.ttf);
     font-weight: bold;
     font-style: italic;
 }
@@ -95,7 +95,7 @@ p {
 
 .header {
     color: white;
-    background: url("/assets/images/banner_img.png");
+    background: url("../assets/images/banner_img.png");
     height: 105vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -231,7 +231,7 @@ p {
     padding: 5rem 2rem 2rem 2rem;
     height: 950px;
     text-align: center;
-    background: url("/assets/images/background-vector.png");
+    background: url("../assets/images/background-vector.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;

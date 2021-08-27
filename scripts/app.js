@@ -111,19 +111,19 @@ const minusSlide = function() {
 const reviews = [     
     {
         name: "Brendon Summers",
-        avatar: "/assets/images/thispersondoesnotexist5.jfif",
+        avatar: "./assets/images/thispersondoesnotexist5.jfif",
         occupation: "Chief Executive Officer of EntertainmentForest",
         comment: '"Appify at vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores et quas molestias excepturi sint occaecati cupiditate."'
     },
     {
         name: "Julia Carroll",
-        avatar: "/assets/images/thispersondoesnotexist3.jfif",
+        avatar: "./assets/images/thispersondoesnotexist3.jfif",
         occupation: "Web Developer",
         comment: '"Top sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut fugit"'
     },
     {
         name: "Aiysha Roberts",
-        avatar: "/assets/images/thispersondoesnotexist1.jfif",
+        avatar: "./assets/images/thispersondoesnotexist1.jfif",
         occupation: "Manager at OtkinGroup",
         comment: '"Appify ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim veniam, quis exercitation."'
     },
