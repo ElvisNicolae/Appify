@@ -128,4 +128,8 @@
     .header__content {
         padding-bottom: 40rem;
     }
+    
+    .right-section .left-right-section__text-area {
+    padding: 0rem 0rem 0rem 1.5rem;
+}
 }
