@@ -1,4 +1,4 @@
-const threshold = window.innerWidth < 600 ? 0.45 : 0.7;
+const threshold = window.innerWidth < 600 ? 0.5 : 0.7;
 
 const intersectionCallBack = ([entries]) => { 
     if(entries.isIntersecting){
