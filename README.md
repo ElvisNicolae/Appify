@@ -4,6 +4,6 @@ Appify is a fully responsive website built with HTML, CSS and Javascript for a f
 
 To trigger the CSS animations on scroll, The Intersection Observer API was used.
 
-## <a href="https://elvisnicolae.github.io/Appify/"> Visit the live app </a>
+## Visit the live app
 
 https://elvisnicolae.github.io/Appify/
